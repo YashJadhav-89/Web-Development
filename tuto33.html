@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        background-color: black;
+        color:white;
+        
+    
+    }
+    header::before{
+        content:"";
+        background:url('https://source.unsplash.com/collection/190727/1600*900')no-repeat center center/cover;
+        position:absolute;
+        top:0;
+        left:0;
+        opacity: 0.5;
+        width:100%;
+        height:100%;
+        z-index:-1;
+    }
+    .navigation{
+        font-size: 24px;
+        display:flex;
+    }
+    li{
+        list-style:none;
+        padding:34px 23px;
+    }
+    section{
+        height:344px;
+    
+        margin:3px 23px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+    }
+    section::before{
+        content:"this is yash jadhav"
+    }
+
+    /*section::after{
+        content:"this is yash jadhav"
+    }*/
+
+    h3{
+        font-size:4rem;
+    }
+    p{
+        text-align: center;
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>WELCOME TO CODING HUB</h3>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officia minima, repudiandae accusamus porro voluptates neque, blanditiis ipsam quia natus possimus reiciendis. Nihil nam, itaque in reprehenderit corrupti assumenda cupiditate. Totam laboriosam rerum culpa facere?</P>
+        </section>
+        <hr>
+</body>
+</html>

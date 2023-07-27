@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm and prompt</title>
+</head>
+<link rel = "shoetcut icon"  href="#"
+<body>
+    <div class="container">
+        this is a page
+    </div>
+
+    <script>
+        //alert in in-browser js--does not return anything
+        // alert("this is a message");
+
+        //prompt in js
+        // let name= prompt("what is your name?","guest");
+        // console.log(name);
+
+        //confirm in js
+        let deletePost= confirm("Do you really want to delete this post?");
+        //console.log(deletepost);
+            
+        if(deletePost){
+            //code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            //code to cancel deletion of the post
+            console.log("Your post has not been deleted");
+        }
+    </script>
+    
+</body>
+</html>

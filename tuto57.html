@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENTS</title>
+    <style>
+        #btn{
+            padding:10px 14px;
+            background-color:red;
+            border:2px solid black;
+            color:white;
+            font-weight:bold;
+            border-radius:8px;
+            cursor:pointer;
+
+        }
+    </style>
+</head>
+<link rel ="shortcut icon" href="#"
+<body>
+    <!-- browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend --> 
+
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, laborum sit! Quisquam, quia? Magnam iste iusto blanditiis magni omnis saepe dolorum sed, unde voluptate officiis a perferendis, libero porro necessitatibus sit vero id! Voluptates quos nesciunt doloremque atque recusandae aperiam quis aliquam esse modi quisquam natus odio nisi, non, explicabo impedit, incidunt quaerat rem! Debitis odio possimus temporibus autem fugiat iusto dolor doloremque odit placeat et, numquam quasi ullam ad corporis adipisci omnis sed. Quo ab, illo nisi a excepturi vero eius pariatur consequuntur porro magni id! Quae, sapiente! Consectetur ad, dignissimos deleniti sapiente repellat quod tempora ex quis asperiores blanditiis numquam itaque. Magnam laborum harum doloribus, sequi minus dignissimos maxime temporibus fugiat, explicabo quam ex est excepturi, officia veniam neque nostrum facere esse aspernatur adipisci exercitationem ea? Sequi a in deleniti aspernatur quo eius suscipit vel doloremque blanditiis dolores nisi laborum repudiandae, placeat inventore hic dolore tempore accusamus quam ab? Cum facilis quas consequuntur nihil, placeat quaerat magni explicabo tenetur animi fugiat debitis necessitatibus laborum ex sunt quae eveniet laudantium repudiandae? Dignissimos quibusdam, ad sed distinctio, voluptatum nihil eligendi provident expedita nostrum, ab cupiditate alias maxime. Nobis esse odio commodi officia cumque fugit velit qui repudiandae quam perferendis praesentium excepturi eius reprehenderit, sit iste exercitationem! Molestias nisi debitis non ipsa dolore, magnam distinctio quidem voluptatum, consequatur unde in est magni, omnis aspernatur! Harum expedita aliquid non adipisci. Dolorem sunt, odit eos officiis perspiciatis ipsa saepe sapiente qui voluptate eveniet dignissimos eaque aut ducimus quod fuga commodi recusandae maiores esse libero dolorum quae tempore dolor modi placeat! Consectetur in reprehenderit distinctio. Reprehenderit porro distinctio delectus a perspiciatis iure deleniti et corrupti ad inventore dicta velit recusandae cumque in nihil magni vel, praesentium repellendus soluta minima, ullam necessitatibus ducimus laboriosam optio? Inventore possimus dignissimos modi consequatur aspernatur nemo voluptatum earum eius.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside')
+
+        });
+
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse Outside')
+
+        });
+
+       
+        function toggleHide(){
+        //    let btn = document.getElementById('btn');
+        //    let para = document.getElementById('para');
+           if(para.style.display != 'none'){
+           para.style.display="none";
+           }
+           else{
+            para.style.display ='block';
+           }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+         box-sizing: border-box;
+
+        }
+        body{
+            font-family: 'ubuntu',sans-serif;
+        }
+   .container{
+      width: 900px;
+      border: 3px solid black;
+      background-color: sandybrown;
+      margin: 33px auto;
+
+   }
+   .item{
+    border: 3px solid gray;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background: rgb(248,238,238);
+   }
+   #fruit{
+    float: left;
+    width: 48%;
+
+
+   }
+   #computer{
+    float: left;
+    width: 48%;
+     
+   }
+   #stationary{
+   /* float: left;*/
+    clear:both;
+    width: 100%;
+   }
+   p,h3{
+    text-align:right;
+    text-align:left;
+    text-align:center;
+    text-align:justify; 
+
+   }
+   h1{
+    margin: 23px auto;
+    width: 455px;
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>WELCOME TO MY STORE</h1>
+    <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestiae sed perspiciatis dolorem minima asperiores, ipsam error beatae possimus, repellendus rem? Libero accusamus excepturi autem explicabo incidunt vero! Dolor, totam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam perferendis ipsum doloribus corrupti itaque, repudiandae in. Temporibus unde repellat ullam, optio fugiat dolores, sequi fugit, pariatur est veniam debitis quas delectus vero reprehenderit quaerat?</p>
+    </div>
+    <div id="computer" class="item">
+        <h3>computer</h3>
+        <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat voluptatum, ipsam distinctio omnis eaque illo sit ea architecto harum debitis magnam delectus doloribus natus, veritatis nostrum maxime ut voluptate sapiente numquam, repudiandae est provident quae ad. Nulla, optio! Consequatur libero illo hic aperiam, quidem consectetur voluptas nesciunt nulla doloribus assumenda voluptate quae quas! Ea, quos? Exercitationem perferendis autem non deleniti natus facere cupiditate.
+        </p>
+    </div>    
+    <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem omnis obcaecati vitae modi quia animi tenetur ipsam, quibusdam unde. Odio ea optio perspiciatis nemo est saepe velit voluptatem? Id, ab.</p>
+    </div>
+</body>
+</html>
